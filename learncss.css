@@ -20,8 +20,51 @@ body {
 }
 .header {
   height: 95vh;
-  background-image: linear-gradient(#7ed56f, #28b485), url("img/hero.jpg");
+  background-image: linear-gradient(
+      to right,
+      rgba(126, 213, 111, 0.521),
+      rgba(40, 180, 133, 0.534)
+    ),
+    url("img/hero.jpg");
   background-size: cover;
   background-position: top;
   /* The top stays the same on background position top*/
+  /* clip-path: polygon(50% 0, 50% 0, 100% 100%, 0 100%); */
+  /* I made a demonstration triangle with clip-path and polygon  */
+  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+  /* I made a demonstration triangle with clip-path and polygon  */
+  position: relative;
+}
+.logo-box {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+}
+.logo {
+  height: 35px;
+}
+.text-box {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.heading-primary {
+  color: #fff;
+  text-transform: uppercase;
+}
+.heading-primary-main {
+  display: block;
+  font-size: 60px;
+  font-weight: 400;
+  letter-spacing: 20px;
+}
+.heading-primary-sub {
+  display: block;
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 10px;
+}
+.text-box {
 }
