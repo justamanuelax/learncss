@@ -1,0 +1,15 @@
+{
+  "name": "learncss",
+  "version": "1.0.0",
+  "description": "learn sass",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass main.scss learncss.css -w",
+    "dev:watch": "npm run compile:sass & live-server"
+  },
+  "author": "Amanuel",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^8.0.0"
+  }
+}
