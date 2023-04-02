@@ -1,0 +1,54 @@
+.composition {
+  position: relative;
+  display: -ms-grid;
+  display: grid;
+}
+.composition__photo {
+  width: 35%;
+  -webkit-box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.3);
+          box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.3);
+  border-radius: 0.2rem;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  -ms-grid-columns: auto, auto, auto;
+  grid-template-columns: auto, auto, auto;
+}
+.composition__photo--p1:hover {
+  outline: 1rem solid green;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  z-index: 4;
+  cursor: pointer;
+}
+.composition__photo--p2 {
+  top: 30%;
+  right: 5%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.composition__photo--p2:hover {
+  outline: 1rem solid green;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  z-index: 4;
+  cursor: pointer;
+}
+.composition__photo--p3 {
+  top: 50%;
+  left: 5%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.composition__photo--p3:hover {
+  outline: 1rem solid green;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  z-index: 4;
+  cursor: pointer;
+}
+.composition:hover .composition__photo:not(:hover) {
+  -webkit-transform: scale(0.9), translateY(-0.5rem);
+          transform: scale(0.9), translateY(-0.5rem);
+}

@@ -1,0 +1,65 @@
+.header__text-box {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.heading-primary {
+  color: $color-white;
+  text-transform: uppercase;
+  backface-visibility: hidden;
+  margin-bottom: 5rem;
+
+  &--main {
+    display: block;
+    font-size: 5rem;
+    font-weight: 400;
+    letter-spacing: 2rem;
+    animation-name: moveInLeft;
+    animation-duration: 1s;
+  }
+
+  &--sub {
+    display: block;
+    font-size: 2rem;
+    font-weight: 400;
+    letter-spacing: 1rem;
+    animation: moveInRight 1s ease-in-out;
+  }
+}
+
+.heading-secondary {
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  background-image: linear-gradient(
+    to right,
+    $color-primary,
+    $color-dark-green
+  );
+  background-clip: text;
+  color: transparent;
+  transition: all 0.2s;
+  letter-spacing: 0.2rem;
+  &:hover {
+    transform: skewY(5deg) skewX(10deg) scale(1.1);
+    text-shadow: 0.5rem 1rem 2rem rgba($color-black, 0.2);
+  }
+}
+
+.heading-tertiary {
+  font-size: 2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: $color-black;
+}
+
+.paragraph {
+  font-size: 1rem;
+  color: $color-black;
+  &:not(:last-child) {
+    margin-bottom: 3rem;
+  }
+}

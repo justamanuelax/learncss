@@ -3,13 +3,11 @@
     opacity: 0;
     transform: translateX(-100px);
   }
-
   80% {
     opacity: 0.9;
     transform: translateX(20px);
     /* transform: rotate(180deg); to show me that I can rotate in an animation using transform: rotate(180deg); */
   }
-
   100% {
     opacity: 1;
     transform: translateX(0px);
@@ -20,18 +18,15 @@
     opacity: 0;
     transform: translateX(100px);
   }
-
   80% {
     opacity: 0.9;
     transform: translateX(-20px);
   }
-
   100% {
     opacity: 1;
     transform: translateX(0px);
   }
 }
-
 @keyframes moveInLogo {
   0% {
     opacity: 0;
@@ -41,7 +36,7 @@
       opacity: 0.3;
       transform: rotate(100deg);
     }
-  
+
     50% {
       opacity: 0.5;
       transform: rotate(180deg);
@@ -50,24 +45,20 @@
       opacity: 0.8;
       transform: rotate(288deg);
     } */
-
   100% {
     opacity: 1;
     transform: rotate(360deg);
   }
 }
-
 @keyframes moveInBottom {
   0% {
     opacity: 0.1;
     transform: translateY(100px);
   }
-
   80% {
     opacity: 0.9;
     transform: translateY(-20px);
   }
-
   100% {
     opacity: 1;
     transform: translateY(0px);

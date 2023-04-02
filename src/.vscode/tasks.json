@@ -1,0 +1,13 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "type": "npm",
+      "script": "build:sass",
+      "group": "build",
+      "problemMatcher": [],
+      "label": "npm: build:sass",
+      "detail": "sass  --no-source-map src/sass:public/css"
+    }
+  ]
+}

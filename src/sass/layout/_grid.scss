@@ -1,0 +1,76 @@
+.row {
+  display: flex;
+  flex-direction: row;
+  column-gap: 15rem;
+  [class^="col-"] {
+    flex: 1fr, 1fr;
+  }
+}
+.col-1-of-2 {
+  margin-left: 5rem;
+}
+.col-2-of-2 {
+  &composition {
+    display: grid;
+    justify-content: space-around;
+    align-content: center;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    &__photo--p1 {
+      grid-area: 1/1/1/2;
+    }
+    &__photo--p2 {
+      grid-area: 1/2/1/2;
+    }
+    &__photo--p3 {
+      grid-area: 2/1/2/1;
+    }
+  }
+}
+// .row {
+//   max-width: $grid-width;
+//   background-color: $color-white;
+//   margin: 0 auto;
+
+//   &:not(:last-child) {
+//     margin-bottom: $grid-gutter;
+//   }
+
+//   @include clearfix;
+//   //  This @include clear fix leaves a space between each row
+
+//   [class^="col-"] {
+//     background-image: linear-gradient(to right, orange, purple);
+//     float: left;
+//     &:not(:last-child) {
+//       margin-right: $horizontal-gutter;
+//     }
+//   }
+//   // Where all the class attributes start with col
+//   // This is a CSS attribute selector
+//   // *= contains
+//   // ^= starts with
+//   // $= ends with
+//   // = is equal to
+//   // ~= contains a word
+//   // |= contains a word or is equal to
+
+//   .col-1-of-2 {
+//     width: calc((100% - #{$horizontal-gutter}) / 2);
+//   }
+
+//   .col-1-of-3 {
+//     width: calc((100% - 2 * #{$horizontal-gutter}) / 3);
+//   }
+
+//   .col-1-of-4 {
+//     width: calc((100% - 3 * #{$horizontal-gutter}) / 4);
+//   }
+
+//   .col-1-of-5 {
+//     width: calc((100% - 4 * #{$horizontal-gutter}) / 5);
+//   }
+// }
+
+// // if the width is smaller than 114rem it takes 100 % of the width
+// // margin 0 auto works because the browser will calculate both sides and automatically center based on 0 on both sides.

@@ -1,0 +1,39 @@
+.header {
+  height: 95vh;
+  background-image: url("src/img/hero.jpg"),
+    linear-gradient(
+      to right,
+      rgba($color-primary, 0.521),
+      rgba($color-dark-green, 0.534)
+    );
+  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+
+  background-size: cover;
+  background-position: top;
+  /* The top stays the same on background position top*/
+  /* clip-path: polygon(50% 0, 50% 0, 100% 100%, 0 100%); */
+  /* I made a demonstration triangle with clip-path and polygon  */
+  /* I made a demonstration triangle with clip-path and polygon  */
+  position: relative;
+
+  &__logo-box {
+    position: absolute;
+    top: 4.2rem;
+    left: 4.2rem;
+  }
+
+  &__logo {
+    height: 3.5rem;
+  }
+  &__logo:hover {
+    animation: moveInLogo 2s;
+  }
+
+  &__text-box {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+}
